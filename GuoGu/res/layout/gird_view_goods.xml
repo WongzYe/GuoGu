@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/goods_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+         />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF" >
+
+        <ImageView
+            android:id="@+id/favorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:src="@drawable/icon_unlike" />
+
+        <TextView
+            android:id="@+id/favorite_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/favorite"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/goods_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/favorite"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            android:textColor="#2196F3"
+            android:textSize="10sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/favorite"
+            android:layout_toLeftOf="@id/goods_price"
+            android:text="￥"
+            android:textColor="#2196F3"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+</LinearLayout>

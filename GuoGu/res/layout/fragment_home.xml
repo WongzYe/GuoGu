@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/menu_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        layout="@layout/menu_main_top" />
+
+    <com.example.guogu.view.HomeListView
+        android:id="@+id/home_fragment_listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

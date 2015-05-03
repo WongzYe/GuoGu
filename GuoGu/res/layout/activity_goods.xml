@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F4F4F4"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F4F4F4"
+            android:orientation="vertical" >
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                layout="@layout/menu_main_top" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF" >
+
+                <TextView
+                    android:id="@+id/goods_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="6dp"
+                    android:text="Demo"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/goods_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/goods_name"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="#FFFFFF" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF" >
+
+                <ImageView
+                    android:id="@+id/favor_img"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/icon_unlike" />
+
+                <TextView
+                    android:id="@+id/favor_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/favor_img"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/favor_img"
+                    android:text="喜爱"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/favor_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="3dp"
+                    android:layout_toRightOf="@id/favor_text"
+                    android:text="test"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/price_button"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/shape"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="#FFFFFF" >
+
+                <TextView
+                    android:id="@+id/from_which_category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="12dp"
+                    android:text="test"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_goon" />
+            </RelativeLayout>
+
+            <ListView
+                android:id="@+id/comment_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF" >
+            </ListView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:background="#FFFFFF" >
+
+                <TextView
+                    android:id="@+id/write_comment_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:text="写点评"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/write_comment_img"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="5dp"
+                    android:layout_toLeftOf="@id/write_comment_text"
+                    android:src="@drawable/detail_icon_create" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

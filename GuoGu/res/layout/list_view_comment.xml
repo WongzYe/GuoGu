@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="3dp"
+        android:layout_marginRight="0dp" />
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:layout_toRightOf="@id/avatar"
+        android:text="test"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_name"
+        android:layout_margin="3dp"
+        android:layout_marginLeft="4dp"
+        android:layout_toRightOf="@id/avatar"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/likes"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_below="@id/comment"
+        android:layout_margin="3dp"
+        android:layout_toRightOf="@id/avatar"
+        android:src="@drawable/icon_poke" />
+
+    <TextView
+        android:id="@+id/poke_nums"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/comment"
+        android:layout_margin="3dp"
+        android:layout_marginLeft="0dp"
+        android:layout_toRightOf="@id/likes"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/line"
+        android:layout_width="1dp"
+        android:layout_height="16dp"
+        android:layout_below="@id/comment"
+        android:layout_margin="3dp"
+        android:layout_marginLeft="0dp"
+        android:layout_toRightOf="@id/poke_nums"
+        android:background="#ECECEC" >
+    </TextView>
+
+    <ImageView
+        android:id="@+id/replay_img"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_below="@id/comment"
+        android:layout_margin="3dp"
+        android:layout_marginLeft="0dp"
+        android:layout_toRightOf="@id/line"
+        android:src="@drawable/icon_comment" />
+
+    <TextView
+        android:id="@+id/replay_nums"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/comment"
+        android:layout_margin="3dp"
+        android:layout_marginLeft="0dp"
+        android:layout_toRightOf="@id/replay_img"
+        android:textSize="11sp" />
+
+    <TextView 
+        android:id="@+id/post_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/comment"
+        android:layout_margin="3dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginBottom="5dp"
+        android:textSize="10sp"
+        android:text="2015-4-22"/>
+    
+    <ImageView 
+        android:id="@+id/editor_tag"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_toLeftOf="@id/post_date"
+        android:layout_below="@id/comment"
+        android:layout_marginTop="3dp"
+        android:visibility="gone"
+        android:src="@drawable/icon_selection"/>
+</RelativeLayout>

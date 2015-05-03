@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF" >
+
+    <RelativeLayout
+        android:id="@+id/user_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+        <ImageView
+            android:id="@+id/avatar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_margin="3dp" />
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/avatar"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@id/user_name"
+            android:src="@drawable/icon_goon" />
+
+        <ImageView
+            android:id="@+id/setting_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/icon_menu_setting" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/siding_menu_listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_bar"
+        android:layout_marginTop="10dp"
+        android:divider="#00000000"
+        android:dividerHeight="18dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentTop="true"
+            android:background="#F7F7F7" />
+
+        <TextView
+            android:id="@+id/login_out_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="5dp"
+            android:text="注销"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/login_out_text" 
+            android:src="@drawable/icon_sign_out"/>
+    </RelativeLayout>
+
+</RelativeLayout>
